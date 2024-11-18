@@ -1,24 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layout')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Job Listings</title>
-</head>
-
-<body>
+@section('content')
     <h1>
-        {{$title}}
+        Available Jobs
     </h1>
     <ul>
         @forelse ($jobs as $job)
-        <li>
-            {{$job}}
-        </li>
+            <li>
+                {{ $job }}
+            </li>
         @empty
-        No jobs available
+            No jobs available
         @endforelse
     </ul>
-
-</html>
+@endsection
