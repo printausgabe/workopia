@@ -1,6 +1,4 @@
-@extends('layout')
-
-@section('content')
+<x-layout>
     <h1>
         Available Jobs
     </h1>
@@ -13,4 +11,4 @@
             No jobs available
         @endforelse
     </ul>
-@endsection
+</x-layout>
