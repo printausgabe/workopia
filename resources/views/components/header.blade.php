@@ -9,12 +9,11 @@
             <x-nav-link url="/login" :active="request()->is('login')">Login</x-nav-link>
             <x-nav-link url="/register" :active="request()->is('register')">Register</x-nav-link>
             <x-nav-link url="/dashboard" :active="request()->is('dashboard')" icon="gauge">Dashboard</x-nav-link>
-            <x-button-link url='jobs/create' icon="edit">Create Job</x-button-link>
-            <x-button
-        </nav>
-        <button id="hamburger" class="text-white md:hidden flex items-center">
-            <i class="fa fa-bars text-2xl"></i>
-        </button>
+            <x-button-link url='/jobs/create' icon="edit">Create Job</x-button-link>
+            <x-button </nav>
+                <button id="hamburger" class="text-white md:hidden flex items-center">
+                    <i class="fa fa-bars text-2xl"></i>
+                </button>
     </div>
     <!-- Mobile Menu -->
     <nav id="mobile-menu" class="hidden md:hidden bg-blue-900 text-white mt-5 pb-4 space-y-2">

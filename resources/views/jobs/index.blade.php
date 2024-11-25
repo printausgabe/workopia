@@ -5,7 +5,7 @@
     <ul>
         @forelse ($jobs as $job)
             <li>
-                {{ $job }}
+                <a href="{{ route('jobs.show', $job->id) }}">{{ $job->title }}</a> - {{ $job->description }}
             </li>
         @empty
             No jobs available
