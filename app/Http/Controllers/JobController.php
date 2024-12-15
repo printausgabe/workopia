@@ -32,7 +32,6 @@ class JobController extends Controller
      */
     public function store(Request $request): RedirectResponse
     {
-        echo ('huhu');
         $validatedData = $request->validate([
             'title' => 'required|string|max:255',
             'description' => 'required|string',
@@ -48,12 +47,11 @@ class JobController extends Controller
             'zipcode' => 'nullable|string',
             'contact_email' => 'required|string',
             'contact_phone' => 'nullable|string',
-            'contact_name' => 'required|string',
-            'contact_description' => 'nullable|string',
-            'company_logo' => 'nullable|image|mimes:jpeg,jpg,png,gif|max2048',
+            'company_name' => 'required|string',
+            'company_description' => 'nullable|string',
+            'company_logo' => 'nullable|image|mimes:jpeg,jpg,png,gif|max:2048',
             'company_website' => 'nullable|url'
         ]);
-
         //Hardcoded user ID
         $validatedData['user_id'] = 1;
 
