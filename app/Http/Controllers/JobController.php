@@ -35,6 +35,7 @@ class JobController extends Controller
         $validatedData = $request->validate([
             'title' => 'required|string|max:255',
             'description' => 'required|string',
+            'description' => 'required|string',
             'salary' => 'required|integer',
             'tags' => 'nullable|string',
             'job_type' => 'required|string',
